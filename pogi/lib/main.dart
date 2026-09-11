@@ -14,18 +14,24 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-          child: Text(
-            'Sir Pogi', style: TextStyle(
-              fontSize:50,
-              color: Colors.green
-              )
-          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(
+                'Sir Pogi',
+                style: TextStyle(fontSize: 50, color: Colors.green),
+              ), //text
+              Text('Hi Sir Pogi'),
+            ],
+              
+          ),//column
            
-        ),
-      ),
+        ),//center
+      ),//scaffold
 
 
 
-    );
+    );//mat app
   }
 }
